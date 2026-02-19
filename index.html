@@ -2,12 +2,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <!-- SEO / EEAT Meta Tags -->
+  <!-- SEO / EEAT Meta Tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ARB Staking — How It Works, Risks, Governance, Wallet Safety & Troubleshooting (2026)</title>
-  <meta name="description" content="ARB Staking guide (2026): what ARB can and cannot be staked, governance basics, safe custody, delegation vs staking, common yield misconceptions, security checklist, and troubleshooting. Includes runbook, KPIs, and a deep FAQ.">
+  <title>ARB Staking — How to Stake ARB, Delegation, Safety, Risks & Troubleshooting (2026)</title>
+  <meta name="description" content="ARB Staking guide (2026): how to do ARB staking step-by-step (delegation), what ARB can/can’t be staked for, safe custody, approvals hygiene, fake staking portal risks, verification on explorers, and troubleshooting. Includes runbook, KPIs, and a deep FAQ.">
   <meta name="author" content="Crypto Finance Experts">
   <link rel="canonical" href="https://arb-staking.example.com/">
 
@@ -17,15 +17,15 @@
   <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://arb-staking.example.com/">
-  <meta property="og:title" content="ARB Staking — How It Works, Risks, Governance & Troubleshooting (2026)">
-  <meta property="og:description" content="Practical ARB Staking guide: what’s real vs fake yields, delegation, safety checklist, and troubleshooting.">
+  <meta property="og:title" content="ARB Staking — How to Stake ARB, Safety, Risks & Troubleshooting (2026)">
+  <meta property="og:description" content="Practical ARB Staking guide: how-to steps, delegation, safety checklist, and troubleshooting.">
   <meta property="og:image" content="arbnova.png">
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://arb-staking.example.com/">
-  <meta property="twitter:title" content="ARB Staking — Safety, Reality Check, Fixes (2026)">
-  <meta property="twitter:description" content="Deep guide: understand ARB staking claims, governance delegation, and how to avoid phishing and fake staking portals.">
+  <meta property="twitter:title" content="ARB Staking — How to Stake ARB Safely (2026)">
+  <meta property="twitter:description" content="Deep guide: how to stake ARB (delegation), avoid fake portals, verify on explorers, and fix common issues.">
   <meta property="twitter:image" content="arbnova.png">
 
   <style>
@@ -337,16 +337,15 @@
         <img class="brand-logo" src="arbitrum-arb-logo.png" alt="Arbitrum logo">
         <div>
           <div class="muted" style="font-weight:950; letter-spacing:.2px;">Operational Guide</div>
-          <div class="muted-2" style="font-size:.95rem;">Reality check • Governance • Delegation • Safety • Troubleshooting</div>
+          <div class="muted-2" style="font-size:.95rem;">How to • Delegation • Safety • Risks • Troubleshooting</div>
         </div>
       </div>
 
       <h1>ARB Staking</h1>
       <p class="lead">
-        This is a practical, security-first guide to <strong>ARB Staking</strong>.
-        It explains what ARB <strong>can</strong> and <strong>cannot</strong> be “staked”, the difference between
-        <strong>governance delegation</strong> and yield-bearing staking, how to avoid fake staking portals,
-        how to manage approvals safely, and how to troubleshoot the most common “I staked ARB and it disappeared” situations.
+        This is a practical, security-first guide to <strong>ARB Staking</strong>: <strong>how to stake ARB</strong> the safe way (typically via
+        <strong>governance delegation</strong>), how to avoid fake “staking APY” portals, how approvals work, how to verify everything on explorers,
+        and how to fix the most common “missing tokens / wrong site / approvals risk” problems.
       </p>
 
       <!-- ONLY ONE BUTTON (centered) — NOT LINKED -->
@@ -357,7 +356,7 @@
       </div>
 
       <div class="note">
-        <strong>Quick rule:</strong> If someone promises “guaranteed ARB staking APY”, assume it’s a phishing funnel until proven otherwise.
+        <strong>Quick rule:</strong> If a page promises “guaranteed ARB staking APY”, assume it’s a phishing funnel until proven otherwise.
       </div>
     </div>
 
@@ -369,34 +368,34 @@
 
 <section class="step-guide" aria-labelledby="how-works">
   <div class="container">
-    <h2 id="how-works">ARB Staking Workflow: Verify Claim → Check Official Sources → Delegate (If Needed) → Monitor → Stay Safe</h2>
+    <h2 id="how-works">How to ARB Staking: Verify → Delegate → Track → Stay Safe (Step-by-Step)</h2>
     <div class="steps" role="list">
       <article class="step" role="listitem">
         <div class="icon">①</div>
-        <h3>Reality check: “staking” vs governance delegation</h3>
+        <h3>Verify what “ARB staking” means (don’t trust labels)</h3>
         <p>
-          ARB is primarily a governance token. Many “ARB staking” pages are actually third-party yield products or scams.
+          Most “ARB staking” pages are either governance delegation flows or third-party yield products. Many are scams.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">②</div>
-        <h3>Use official sources + reputable trackers</h3>
+        <h3>Confirm ARB token identity (contract + listings)</h3>
         <p>
-          Start from official Arbitrum governance resources and cross-check token details on reputable listings.
+          Cross-check the token contract on an Arbitrum explorer and reputable listings (CoinGecko / CoinMarketCap).
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">③</div>
-        <h3>Delegate safely (if your goal is governance)</h3>
+        <h3>Delegate ARB safely (keep custody)</h3>
         <p>
-          Delegation is typically signing a delegation action, not sending tokens away. Verify what you’re signing.
+          Delegation typically does not require sending tokens away. Verify the transaction/message you sign.
         </p>
       </article>
       <article class="step" role="listitem">
         <div class="icon">④</div>
-        <h3>Monitor approvals and revoke when done</h3>
+        <h3>Monitor + revoke approvals when done</h3>
         <p>
-          If a site asked for token approvals, review and revoke stale permissions to reduce long-term risk.
+          If you granted approvals, review and revoke stale permissions to reduce long-term risk.
         </p>
       </article>
     </div>
@@ -408,32 +407,33 @@
   <section class="card toc" aria-label="Table of Contents">
     <strong>On this page (ARB Staking):</strong>
     <ul>
-      <li><a href="#overview">Overview: what ARB staking usually means</a></li>
-      <li><a href="#reality">Reality check: ARB staking vs delegation vs DeFi yield</a></li>
-      <li><a href="#security">Security checklist: fake staking portals & approvals</a></li>
-      <li><a href="#delegation">Governance delegation: how it works (operational)</a></li>
-      <li><a href="#yield">“Yield on ARB”: what it really is (and risks)</a></li>
-      <li><a href="#wallet">Wallet hygiene: custody + approvals</a></li>
-      <li><a href="#troubleshooting">Troubleshooting</a></li>
+      <li><a href="#overview">ARB Staking overview (what it is & what it isn’t)</a></li>
+      <li><a href="#howto">How to stake ARB safely (step-by-step)</a></li>
+      <li><a href="#models">ARB staking models: delegation vs DeFi yield vs scams</a></li>
+      <li><a href="#security">ARB staking security checklist</a></li>
+      <li><a href="#delegation">How to ARB staking via delegation (operational)</a></li>
+      <li><a href="#yield">How to earn yield with ARB (not staking) + risks</a></li>
+      <li><a href="#wallet">Wallet hygiene: custody, approvals, recovery</a></li>
+      <li><a href="#troubleshooting">How to fix ARB staking issues</a></li>
       <li><a href="#eeat">Authoritative sources (EEAT)</a></li>
-      <li><a href="#faq">FAQ (deep)</a></li>
+      <li><a href="#faq">ARB Staking FAQ (deep)</a></li>
     </ul>
   </section>
 
   <section class="card" id="overview">
-    <h2>ARB Staking Overview: What Most People Mean by “Staking ARB”</h2>
+    <h2>ARB Staking Overview: What ARB Staking Is (and What It’s Not)</h2>
     <p>
-      <strong>ARB</strong> is widely understood as a governance token in the Arbitrum ecosystem.
-      When users say “ARB staking”, they may mean one of three things:
-      (1) <strong>governance delegation</strong>, (2) <strong>DeFi yield strategies</strong> that use ARB,
-      or (3) <strong>scams</strong> that pretend to be “official staking”.
+      <strong>ARB</strong> is widely treated as a governance token in the Arbitrum ecosystem.
+      When users search for <strong>ARB staking</strong>, they usually want one of these:
+      (1) <strong>delegation</strong> (governance participation), (2) <strong>yield strategies</strong> that use ARB,
+      or (3) they’ve been sent to a <strong>fake staking portal</strong>.
     </p>
 
     <div class="callout-grid" role="list">
       <div class="mini" role="listitem">
-        <h3>Lowest-risk intent</h3>
+        <h3>Safest default interpretation</h3>
         <p class="muted">
-          Governance delegation: you keep custody and delegate voting power.
+          “Stake ARB” = delegate voting power while keeping custody.
         </p>
         <div class="kpi-badges">
           <span>Custody retained</span><span>Governance</span><span>Lower risk</span>
@@ -441,18 +441,18 @@
       </div>
 
       <div class="mini" role="listitem">
-        <h3>Highest-risk intent</h3>
+        <h3>Highest-risk interpretation</h3>
         <p class="muted">
-          “Official staking APY” portals and unknown contracts asking for approvals or transfers.
+          “Official staking APY” pages that request approvals or transfers.
         </p>
         <div class="kpi-badges">
-          <span>Phishing risk</span><span>Approval risk</span><span>Contract risk</span>
+          <span>Phishing</span><span>Approvals</span><span>Transfers</span>
         </div>
       </div>
     </div>
 
     <div class="note">
-      <strong>Operational truth:</strong> If you had to “send ARB to stake”, treat it as high risk until verified on official sources.
+      <strong>Operational truth:</strong> If a site made you “send ARB to stake”, treat it as high risk until verified on-chain and via official sources.
     </div>
 
     <div class="content-media">
@@ -460,128 +460,150 @@
     </div>
   </section>
 
-  <section class="card" id="reality">
-    <h2>Reality Check: ARB Staking vs Governance Delegation vs DeFi Yield</h2>
-    <table aria-label="ARB staking meanings">
+  <section class="card" id="howto">
+    <h2>How to ARB Staking Safely: Step-by-Step (Do This First)</h2>
+    <ol>
+      <li><strong>Start from official sources:</strong> verify you’re using official Arbitrum governance resources (bookmark domains).</li>
+      <li><strong>Confirm ARB token identity:</strong> cross-check contract address on explorer + CoinGecko/CoinMarketCap.</li>
+      <li><strong>Decide your goal:</strong> governance participation (delegation) vs yield product (higher risk).</li>
+      <li><strong>If delegating:</strong> sign the delegation action and verify it on explorer.</li>
+      <li><strong>If using a yield app:</strong> test with a small amount and use minimal approvals.</li>
+      <li><strong>Verify results:</strong> explorer-first (token balances/transfers).</li>
+      <li><strong>Cleanup:</strong> revoke approvals you don’t need anymore.</li>
+    </ol>
+
+    <div class="note">
+      <strong>Rule:</strong> The safest “ARB staking” flow should not require you to transfer ARB to an unknown address.
+    </div>
+  </section>
+
+  <section class="card" id="models">
+    <h2>ARB Staking Models: Delegation vs Yield vs Scams (What’s Real)</h2>
+    <table aria-label="ARB staking models">
       <thead>
         <tr>
-          <th>What people call it</th>
-          <th>What it actually is</th>
+          <th>Label you’ll see</th>
+          <th>What it usually is</th>
           <th>Main risk</th>
         </tr>
       </thead>
       <tbody>
         <tr class="highlight">
-          <td>ARB “staking” (often)</td>
-          <td>Marketing term for third-party yield products</td>
-          <td>Smart-contract + protocol risk</td>
+          <td>ARB staking (legit context)</td>
+          <td>Governance delegation (vote power)</td>
+          <td>Phishing UI / wrong signature</td>
         </tr>
         <tr>
-          <td>Delegation</td>
-          <td>Delegating governance voting power</td>
-          <td>Signing wrong message / phishing UI</td>
+          <td>ARB staking APY / rewards</td>
+          <td>Third-party DeFi product (vault/LP/lending)</td>
+          <td>Smart contract + market risk</td>
         </tr>
         <tr>
-          <td>Scam staking portal</td>
-          <td>Phishing + approvals or transfers</td>
-          <td>Immediate loss of funds</td>
+          <td>Official staking portal (random domain)</td>
+          <td>Phishing + approvals / transfers</td>
+          <td>Immediate loss</td>
         </tr>
       </tbody>
     </table>
 
     <div class="note">
-      <strong>Rule:</strong> If a portal says “official ARB staking”, verify using official Arbitrum governance resources first.
+      <strong>Rule:</strong> If you can’t identify the contract + mechanism, don’t interact.
     </div>
   </section>
 
   <section class="card" id="security">
-    <h2>ARB Staking Security Checklist: High-Impact Habits</h2>
+    <h2>ARB Staking Security Checklist: Don’t Get Drained</h2>
     <ul>
-      <li><strong>Start from official domains:</strong> don’t click ads; bookmark official Arbitrum governance pages.</li>
-      <li><strong>Never trust APY screenshots:</strong> verify mechanism, contract addresses, and who controls keys.</li>
-      <li><strong>Read what you sign:</strong> approvals and “permit” signatures can be dangerous.</li>
-      <li><strong>Use minimal approvals:</strong> avoid unlimited allowances unless you fully trust the contract.</li>
-      <li><strong>Separate wallets:</strong> vault (hardware) vs daily dApp wallet.</li>
-      <li><strong>Explorer-first:</strong> verify token movements on an explorer immediately.</li>
+      <li><strong>Never click sponsored results:</strong> scammers buy ads for “ARB staking”.</li>
+      <li><strong>Verify domains:</strong> one character off = drain site.</li>
+      <li><strong>Read approvals:</strong> unlimited allowances are a risk multiplier.</li>
+      <li><strong>Use minimal approvals:</strong> approve only what you need.</li>
+      <li><strong>Separate wallets:</strong> vault wallet for holding, hot wallet for dApps.</li>
+      <li><strong>Keep ETH gas:</strong> you need it to revoke approvals and move funds.</li>
+      <li><strong>Explorer-first:</strong> wallets can lag; explorer is truth.</li>
     </ul>
 
     <div class="note">
-      <strong>Biggest avoidable loss:</strong> signing approvals on a fake “ARB staking” website.
+      <strong>Most avoidable loss:</strong> signing an approval on a fake “ARB staking rewards” portal.
     </div>
   </section>
 
   <section class="card" id="delegation">
-    <h2>Governance Delegation: The Safe “ARB Staking” Alternative (Operational)</h2>
+    <h2>How to ARB Staking via Delegation: Step-by-Step (Keep Custody)</h2>
     <p>
-      If your goal is to participate in Arbitrum governance, delegation is the typical path.
-      Delegation generally means assigning your voting power to yourself or a delegate.
+      If your goal is “staking” as participation (not yield), delegation is the typical path:
+      you keep your ARB and delegate voting power.
     </p>
-    <ul>
-      <li><strong>Custody:</strong> you usually keep your ARB in your wallet.</li>
-      <li><strong>Action:</strong> you sign a delegation transaction or message.</li>
-      <li><strong>Verification:</strong> confirm delegation status through official governance tooling.</li>
-    </ul>
+
+    <ol>
+      <li><strong>Use official governance tooling:</strong> open official Arbitrum governance resources.</li>
+      <li><strong>Select delegate:</strong> choose yourself or a reputable delegate.</li>
+      <li><strong>Confirm action:</strong> you should be signing a delegation action (not transferring ARB away).</li>
+      <li><strong>Verify on explorer:</strong> confirm the tx is successful and matches the action.</li>
+      <li><strong>Re-check status:</strong> governance dashboards can lag; refresh and confirm later.</li>
+    </ol>
 
     <div class="note">
-      <strong>Safety:</strong> delegation should not require you to send ARB to a random address.
+      <strong>Safety check:</strong> If a “delegation” UI asks you to send tokens to an address, stop and verify.
     </div>
   </section>
 
   <section class="card" id="yield">
-    <h2>“Yield on ARB”: What It Usually Means (and the Risks)</h2>
+    <h2>How to Earn Yield With ARB (Not Staking): Options and Risks</h2>
     <p>
-      Any “yield” involving ARB is typically a third-party strategy (lending, LP, incentives, vaults).
-      That can be valid—but it’s not “risk-free staking”.
+      Yield involving ARB usually comes from third-party DeFi strategies (vaults, LP, incentives, lending).
+      That can be valid, but it’s not “risk-free staking”.
     </p>
     <ul>
-      <li><strong>Protocol risk:</strong> smart contract bugs, admin risk, oracle issues.</li>
-      <li><strong>Market risk:</strong> ARB price volatility and LP impermanent loss.</li>
-      <li><strong>Liquidity risk:</strong> lockups, withdrawal delays, or poor exit liquidity.</li>
+      <li><strong>Smart-contract risk:</strong> bugs, admin keys, upgrades.</li>
+      <li><strong>Market risk:</strong> ARB volatility, LP impermanent loss.</li>
+      <li><strong>Liquidity risk:</strong> withdrawals, lockups, exit slippage.</li>
     </ul>
 
     <div class="note">
-      <strong>Rule:</strong> If you can’t explain where yield comes from, don’t deposit.
+      <strong>Rule:</strong> If yield source isn’t clear, treat it as marketing—not a strategy.
     </div>
   </section>
 
   <section class="card" id="wallet">
-    <h2>Wallet Hygiene for ARB: Custody, Approvals, and Recovery Readiness</h2>
+    <h2>Wallet Hygiene for ARB Staking: Custody, Approvals, Recovery Readiness</h2>
     <ul>
-      <li><strong>Keep ETH gas:</strong> you need ETH to revoke approvals and move funds.</li>
-      <li><strong>Review allowances:</strong> regularly audit what contracts can spend your ARB.</li>
-      <li><strong>Use hardware wallet for long-term custody</strong> and a separate hot wallet for experiments.</li>
-      <li><strong>Keep receipts:</strong> tx hashes and contract addresses help when troubleshooting.</li>
+      <li><strong>Keep ETH gas:</strong> you need ETH for revoke/transfer fixes.</li>
+      <li><strong>Audit approvals monthly:</strong> stale allowances are silent risk.</li>
+      <li><strong>Use hardware wallet for long-term ARB holding.</strong></li>
+      <li><strong>Document tx hashes:</strong> helps when troubleshooting.</li>
     </ul>
 
     <div class="note">
-      <strong>Operational tip:</strong> After using any “staking/yield” app, revoke approvals when done.
+      <strong>Operational habit:</strong> After any DeFi interaction, revoke approvals you don’t need.
     </div>
   </section>
 
   <section class="card" id="troubleshooting">
-    <h2>ARB Staking Troubleshooting: Common Issues + Fixes</h2>
+    <h2>How to Fix ARB Staking Issues: Missing Tokens, Failed Actions, Approval Risks</h2>
 
-    <h3>“I staked ARB and it disappeared”</h3>
+    <h3>“My ARB is missing after staking”</h3>
     <ul>
-      <li>Check your address on an explorer to see if ARB was transferred out.</li>
-      <li>If it was transferred to an unknown address/contract, treat it as a security incident.</li>
-      <li>If it wasn’t transferred, it may be UI/RPC caching—verify token balance on explorer.</li>
+      <li>Check your address on an Arbitrum explorer for outgoing transfers.</li>
+      <li>If ARB was transferred to an unknown contract/address, treat it as a security incident.</li>
+      <li>If there was no transfer, it may be UI/RPC lag—trust the explorer balance.</li>
     </ul>
 
-    <h3>“A site asked for unlimited approvals”</h3>
+    <h3>“I approved a contract and now I’m worried”</h3>
     <ul>
-      <li>Stop and verify the domain and contract legitimacy.</li>
-      <li>If already approved, revoke the allowance as soon as possible.</li>
+      <li>Revoke approvals immediately using an allowance tool.</li>
+      <li>If you suspect compromise, move remaining funds to a fresh wallet.</li>
     </ul>
 
     <h3>“Delegation doesn’t show up”</h3>
     <ul>
-      <li>Confirm you used the correct chain/account and official governance interface.</li>
-      <li>Check the transaction status on explorer; UIs can lag.</li>
+      <li>Confirm the transaction succeeded on explorer.</li>
+      <li>Ensure you’re viewing the correct account and chain context.</li>
+      <li>Give dashboards time to update; re-check later.</li>
     </ul>
 
     <div class="note">
-      <strong>Golden rule:</strong> If explorer shows a transfer out of your wallet, it’s not a “display bug.”
+      <strong>Golden rule:</strong> If explorer shows a transfer out, it’s not a display bug.
     </div>
   </section>
 
@@ -596,11 +618,11 @@
       <li><a href="https://docs.arbitrum.io/" target="_blank" rel="noopener nofollow">Arbitrum Documentation</a></li>
     </ul>
 
-    <h3>Token verification (contract address cross-check)</h3>
+    <h3>Token verification (cross-check contract addresses)</h3>
     <ul>
       <li><a href="https://www.coingecko.com/" target="_blank" rel="noopener nofollow">CoinGecko — token listings</a></li>
       <li><a href="https://coinmarketcap.com/" target="_blank" rel="noopener nofollow">CoinMarketCap — token listings</a></li>
-      <li><a href="https://www.oklink.com/" target="_blank" rel="noopener nofollow">OKLink — multi-chain explorer tools</a></li>
+      <li><a href="https://www.defillama.com/" target="_blank" rel="noopener nofollow">DeFiLlama — protocols & volumes</a></li>
     </ul>
 
     <h3>Explorer & approvals hygiene</h3>
@@ -620,73 +642,73 @@
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f1" id="b1">
-        <h3>Is there official ARB staking with APY?</h3><span class="faq-plus">+</span>
+        <h3>How to stake ARB?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f1" class="faq-content" role="region" aria-labelledby="b1">
-        <p>Be cautious. ARB is primarily a governance token; many “ARB staking APY” claims are third-party yield products or scams. Verify using official Arbitrum governance resources before interacting.</p>
+        <p>In most legitimate contexts, “staking ARB” means governance delegation. Start from official governance resources, choose a delegate, sign the delegation action, and verify it on an explorer.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f2" id="b2">
-        <h3>What’s the safer alternative to “staking ARB”?</h3><span class="faq-plus">+</span>
+        <h3>Is there official ARB staking with APY?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f2" class="faq-content" role="region" aria-labelledby="b2">
-        <p>If your goal is participation, governance delegation is usually the lowest-risk path: you keep custody and delegate voting power via official tooling.</p>
+        <p>Be cautious. Many “ARB staking APY” claims are third-party yield products or scams. Verify any “official” claim via Arbitrum’s official governance resources first.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f3" id="b3">
-        <h3>How can I verify I’m using the real ARB token?</h3><span class="faq-plus">+</span>
+        <h3>What’s the difference between staking and delegation for ARB?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f3" class="faq-content" role="region" aria-labelledby="b3">
-        <p>Verify the contract address on an explorer and cross-check the same address on reputable listings like CoinGecko or CoinMarketCap.</p>
+        <p>Delegation assigns governance voting power while you keep custody. “Staking for yield” typically refers to third-party DeFi products with smart-contract and market risks.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f4" id="b4">
-        <h3>Why do scammers target “ARB staking” keywords?</h3><span class="faq-plus">+</span>
+        <h3>How can I verify the real ARB token?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f4" class="faq-content" role="region" aria-labelledby="b4">
-        <p>Because users search for yield. Fake portals use “staking” language to trick users into approvals or transfers. Always verify domains and what you sign.</p>
+        <p>Verify the contract address on an Arbitrum explorer and cross-check the same address on reputable listings (CoinGecko/CoinMarketCap).</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f5" id="b5">
-        <h3>What should I do if I already approved a suspicious contract?</h3><span class="faq-plus">+</span>
+        <h3>What should I do if I approved a suspicious ARB staking contract?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f5" class="faq-content" role="region" aria-labelledby="b5">
-        <p>Revoke the approval immediately using an allowance tool while connected to the correct network, then move funds to a fresh wallet if you suspect compromise.</p>
+        <p>Revoke approvals immediately using an allowance tool, then consider moving funds to a fresh wallet if you suspect compromise.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f6" id="b6">
-        <h3>Does delegation require sending ARB away?</h3><span class="faq-plus">+</span>
+        <h3>Does “staking ARB” require sending tokens away?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f6" class="faq-content" role="region" aria-labelledby="b6">
-        <p>Typically no—you retain custody and delegate voting power. If a site asks you to send ARB to “delegate”, treat it as suspicious until verified.</p>
+        <p>Delegation usually does not. If a site asks you to transfer ARB to an address to “stake”, treat it as high risk until verified.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f7" id="b7">
-        <h3>Can I earn yield on ARB safely?</h3><span class="faq-plus">+</span>
+        <h3>Why do dashboards show wrong status sometimes?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f7" class="faq-content" role="region" aria-labelledby="b7">
-        <p>Any yield strategy is a third-party product with smart-contract and market risk. Reduce risk by understanding mechanics, using reputable protocols, testing small, and keeping approvals tight.</p>
+        <p>Indexers and RPCs can lag. Verify transactions and token movements on an explorer first, then refresh dashboards later.</p>
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-button" aria-expanded="false" aria-controls="f8" id="b8">
-        <h3>Explorer shows my ARB transferred out—can it be a UI bug?</h3><span class="faq-plus">+</span>
+        <h3>What’s the #1 safety rule for ARB staking?</h3><span class="faq-plus">+</span>
       </button>
       <div id="f8" class="faq-content" role="region" aria-labelledby="b8">
-        <p>No. If an explorer shows a transfer out of your wallet, it happened on-chain. Focus on incident response: revoke approvals, secure wallet, and stop interacting with the portal.</p>
+        <p>Don’t sign approvals or send tokens on “ARB staking” portals you can’t verify via official resources and explorer contract checks.</p>
       </div>
     </div>
 
